@@ -1,0 +1,114 @@
+*::after,*::before,*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+
+}
+body{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #080808;
+    color:#101010;
+ 
+
+}
+.section{
+    width: 605px;
+    background-color: white;
+    box-shadow: 0 0 30px  #ca1196;
+    border-radius: 15px;
+    padding: 30px 30px 25px;
+}
+.section header{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+.section header:hover{
+    text-shadow: 0 0 30px  #ca1196;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.section .content{
+    margin: 35px 0;
+}
+.content .quote-area{
+    display: flex;
+    justify-content: center;
+}
+.quote-area i{
+    font-size: 15px;
+}
+.quote-area i:first-child{
+    margin: 3px 10px 0 0;
+}
+.quote-area i:last-child{
+    margin:0 0 3px 10px ;
+    display: flex;
+    align-items: flex-end;
+}
+.quote-area .quote{
+    font-size: 22px;
+    text-align: center;
+   
+}
+.content .author{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+
+}
+.author span:first-child{
+    margin: -7px 5px 0 0 ;
+    font-family: monospace;
+
+}
+.section .buttons{
+    border-top: 1px solid #ccc;
+}
+.buttons .features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.features ul{
+    display: flex;
+}
+.features ul li{
+    list-style: none;
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    border: 2px solid #ca1196;
+    color: #ca1196;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.features ul li:hover{
+    color: white;
+    background: #ca1196;
+}
+.features button{
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 13px 22px;
+    border-radius: 30px;
+    background: #ca1196;
+
+}
+button.loading{
+    opacity: 0.7;
+    pointer-events: none;
+}
